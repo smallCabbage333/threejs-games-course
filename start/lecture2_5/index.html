@@ -26,6 +26,25 @@
 <body>
    <script>
      //Place your code here
+    const planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus"];
+    planets.push("Neptune");
+
+    console.log('There are ' + planets.length + ' planets in our Solar System');
+    console.log('Our planet is ' + planets[2]);
+
+    planets.push("Pluto");
+    console.log('Until 2006 there were ' + planets.length + ' planets in our solar system');
+
+    const pluto = planets.pop();
+    console.log('In 2006 ' + pluto + ' was declassified as a planet. Now there are ' + planets.length + ' planets');
+
+    //My function
+    function month(){
+      const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+      const thisMonth = new Date().getMonth();
+      console.log(months[thisMonth]);
+    }
    </script> 
 </body>
 
